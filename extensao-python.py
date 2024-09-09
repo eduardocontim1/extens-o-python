@@ -53,7 +53,6 @@ from statsmodels.tsa.arima.model import ARIMA
 train = data_monthly['Vendas'][:'2023-06']
 test = data_monthly['Vendas']['2023-07':]
 
-# Ajustar o modelo ARIMA
 model = ARIMA(train, order=(1, 1, 1))
 model_fit = model.fit()
 
